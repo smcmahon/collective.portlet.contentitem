@@ -1,0 +1,21 @@
+<dl class="portlet portletContentItemPortlet"
+    i18n:domain="collective.portlet.contentitem">
+
+    <dt class="portletHeader">
+        <span class="portletTopLeft"></span>
+        Header
+        <span class="portletTopRight"></span>
+    </dt>
+
+    <dd class="portletItem odd">
+        Content Item Portlet
+        <div tal:content="view/contentItem" />
+    </dd>
+
+    <dd class="portletFooter">
+        <span class="portletBottomLeft"></span>
+        Footer
+        <span class="portletBottomRight"></span>
+    </dd>
+
+</dl>

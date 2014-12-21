@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<portlets>
+
+ <!-- Portlet type registrations -->
+
+ <portlet
+   addview="collective.portlet.contentitem.ContentItemPortlet"
+   title="Content-Item Portlet"
+   description="Portlet to display a content item"
+   />
+
+</portlets>
