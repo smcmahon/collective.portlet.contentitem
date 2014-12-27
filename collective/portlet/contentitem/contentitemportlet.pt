@@ -1,20 +1,18 @@
 <dl class="portlet portletContentItemPortlet"
-    i18n:domain="collective.portlet.contentitem">
+    i18n:domain="collective.portlet.contentitem"
+    tal:condition="view/mybrain">
 
     <dt class="portletHeader">
         <span class="portletTopLeft"></span>
-        Header
+        <a tal:attributes="href view/contentURL" tal:content="view/contentTitle" />
         <span class="portletTopRight"></span>
     </dt>
 
-    <dd class="portletItem odd">
-        Content Item Portlet
-        <div tal:content="view/contentItem" />
-    </dd>
+    <dd class="portletItem odd" tal:content="view/contentDescription" />
 
     <dd class="portletFooter">
         <span class="portletBottomLeft"></span>
-        Footer
+        <a tal:attributes="href view/contentURL">More &hellip;</a>
         <span class="portletBottomRight"></span>
     </dd>
 

@@ -15,22 +15,16 @@
        provides="Products.GenericSetup.interfaces.EXTENSION"
        />
 
-     <!-- Register the portlet -->
 
-     <!-- If the portlet has no configurable parameters, you can remove
-          the EditForm declaration in contentitemportlet.py and delete
-          the 'editview' attribute from this statement.
-       -->
-
-     <plone:portlet
-         name="collective.portlet.contentitem.ContentItemPortlet"
-         interface=".contentitemportlet.IContentItemPortlet"
-         assignment=".contentitemportlet.Assignment"
-         view_permission="zope2.View"
-         edit_permission="cmf.ManagePortal"
-         renderer=".contentitemportlet.Renderer"
-         addview=".contentitemportlet.AddForm"
-         editview=".contentitemportlet.EditForm"
-         />
+    <plone:portlet
+        name="collective.portlet.contentitem.ContentItemPortlet"
+        interface=".contentitemportlet.IContentItemPortlet"
+        assignment=".contentitemportlet.Assignment"
+        view_permission="zope2.View"
+        edit_permission="cmf.ManagePortal"
+        renderer=".contentitemportlet.Renderer"
+        addview=".contentitemportlet.AddForm"
+        editview=".contentitemportlet.EditForm"
+        />
 
 </configure>
