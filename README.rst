@@ -5,7 +5,7 @@ collective.portlet.contentitem does something ver simple: it allows you to displ
 
 When you add or edit a content-item portlet, you'll be able to choose the represented content item via a tree browser, just as with the navigation portlet.
 
-Odds are that the template used to render the portlet won't do what you want. Just override it with jbot as collective.portlet.contentitem.contentitemportlet.py.
+Odds are that the template used to render the portlet won't do what you want. Just override it with jbot as collective.portlet.contentitem.contentitemportlet.pt.
 
 Available view methods are:
 
